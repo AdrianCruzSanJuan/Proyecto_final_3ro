@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: cursive;
+                text-align: center;
+            }
+            input{
+                border-radius: 50px;
+                font-family: monospace;
+            }
+            a{
+                color: crimson;
+                font-family:fantasy;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+        <body>
+        <form method="post" action="enviar.php">
+            Nombre   :<input type="Text" name="nombre"><br><br>
+            Apellido paterno:<input type="Text" name="apellido_paterno"><br><br>
+            Apellido materno :<input type="Text" name="apellido_materno"><br><br>
+            Municipio   :<input type="Text" name="municipio"><br><br>
+            Localidad   :<input type="Text" name="localidad"><br><br>
+            <input type="Submit" name="enviar" value="Aceptar informacion">
+        </form>
+        <form method="post" action="buscar.php">
+            Buscar:<input type="Text" name="buscar"><br><br>
+            <input type="Submit" name="busqueda" value="Aceptar informacion">
+        </form>
+        <a href="consultar.php"> Ver todos </a>
+     </body>
+</html>
